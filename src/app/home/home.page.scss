@@ -58,7 +58,7 @@
 }
 
 .footer {
-  margin: 0 40px;
+  margin: 0 20px;
   border-width: 2px 0 0 0;
   border-style: solid;
   border-color: rgba(0, 0, 0, 1);
@@ -66,14 +66,43 @@
   .body {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 20px;
     margin-bottom: 50px;
     font-size: 14px;
     font-weight: 400;
-
-    .links u {
-      margin-right: 20px;
-    }
   }
 }
 
+.body-links {
+  & span {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.py-2 {
+  padding: 5px;
+}
+
+.submit-btn {
+  padding: 10px 0;
+  background: white;
+  border: 1px solid;
+}

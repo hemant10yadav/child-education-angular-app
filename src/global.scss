@@ -10,29 +10,30 @@
  */
 
 /* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
+@import '@ionic/angular/css/core.css';
 
 /* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
+@import '@ionic/angular/css/normalize.css';
+@import '@ionic/angular/css/structure.css';
+@import '@ionic/angular/css/typography.css';
+@import '@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+@import '@ionic/angular/css/padding.css';
+@import '@ionic/angular/css/float-elements.css';
+@import '@ionic/angular/css/text-alignment.css';
+@import '@ionic/angular/css/text-transformation.css';
+@import '@ionic/angular/css/flex-utils.css';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-$appColor: #AB95F9;
+$appColor: #ab95f9;
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
-  font-variation-settings: "wdth" 100,
-  "YTLC" 500;
+  font-variation-settings:
+    'wdth' 100,
+    'YTLC' 500;
 }
 
 .cursor-pointer {
@@ -50,7 +51,6 @@ $appColor: #AB95F9;
 .fw-600 {
   font-weight: 600;
 }
-
 
 .fs-50 {
   font-size: 50px;
@@ -108,5 +108,5 @@ $appColor: #AB95F9;
 }
 
 .w-100 {
-  width: 100%
+  width: 100%;
 }

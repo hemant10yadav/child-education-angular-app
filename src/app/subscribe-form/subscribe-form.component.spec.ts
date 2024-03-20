@@ -9,8 +9,8 @@ describe('SubscribeFormComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubscribeFormComponent ],
-      imports: [IonicModule.forRoot()]
+      declarations: [SubscribeFormComponent],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(SubscribeFormComponent);

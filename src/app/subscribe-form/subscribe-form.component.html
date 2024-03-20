@@ -10,17 +10,17 @@
           <ion-breadcrumb href="#">Shipping</ion-breadcrumb>
           <ion-breadcrumb href="#">payment</ion-breadcrumb>
         </ion-breadcrumbs>
-        <hr>
+        <hr />
         <div>
           <h3 class="fw-700">Contact Information</h3>
           <form>
             <div>
               <ion-label>Your Name</ion-label>
-              <input placeholder="e.g Osama Alshathri"/>
+              <input placeholder="e.g Osama Alshathri" />
             </div>
             <div class="mt-4">
               <ion-label>Email</ion-label>
-              <input placeholder="osama.@gmail.com"/>
+              <input placeholder="osama.@gmail.com" />
             </div>
           </form>
         </div>
@@ -29,42 +29,50 @@
           <form>
             <div>
               <ion-label>Child's Full Name</ion-label>
-              <input placeholder="e.g Sarah Mohammad"/>
+              <input placeholder="e.g Sarah Mohammad" />
             </div>
             <div class="mt-4">
               <ion-label>Child's Date of Birth</ion-label>
               <div class="d-flex gap-1">
                 <div>
-                  <input [value]="getDate().getDate()" readonly id="day"
-                         placeholder="Date"/>
+                  <input [value]="getDate().getDate()" readonly id="day" placeholder="Date" />
                   <ion-popover trigger="day">
                     <ng-template>
-                      <ion-datetime mode="ios" name="date" [(ngModel)]="dob"
-                                    presentation="day"
-                                    locale="en-US"></ion-datetime>
+                      <ion-datetime
+                        mode="ios"
+                        name="date"
+                        [(ngModel)]="dob"
+                        presentation="day"
+                        locale="en-US"
+                      ></ion-datetime>
                     </ng-template>
                   </ion-popover>
                 </div>
                 <div>
-                  <input [value]="monthNames[getDate().getUTCMonth()]"
-                         readonly id="month"
-                         placeholder="Month"/>
+                  <input [value]="monthNames[getDate().getUTCMonth()]" readonly id="month" placeholder="Month" />
                   <ion-popover trigger="month">
                     <ng-template>
-                      <ion-datetime mode="ios" name="date" [(ngModel)]="dob"
-                                    presentation="month"
-                                    locale="en-US"></ion-datetime>
+                      <ion-datetime
+                        mode="ios"
+                        name="date"
+                        [(ngModel)]="dob"
+                        presentation="month"
+                        locale="en-US"
+                      ></ion-datetime>
                     </ng-template>
                   </ion-popover>
                 </div>
                 <div>
-                  <input [value]="getDate().getFullYear()" readonly id="year"
-                         placeholder="Year"/>
+                  <input [value]="getDate().getFullYear()" readonly id="year" placeholder="Year" />
                   <ion-popover trigger="year">
                     <ng-template>
-                      <ion-datetime mode="ios" name="date" [(ngModel)]="dob"
-                                    presentation="year"
-                                    locale="en-US"></ion-datetime>
+                      <ion-datetime
+                        mode="ios"
+                        name="date"
+                        [(ngModel)]="dob"
+                        presentation="year"
+                        locale="en-US"
+                      ></ion-datetime>
                     </ng-template>
                   </ion-popover>
                 </div>
@@ -72,12 +80,11 @@
             </div>
             <div class="mt-4">
               <ion-label>Grade</ion-label>
-              <input placeholder="e.g Grade 2"/>
+              <input placeholder="e.g Grade 2" />
             </div>
             <div class="mt-4">
               <ion-label>Gender</ion-label>
-              <ion-radio-group mode="ios" name="gender" class="d-flex gap-1"
-                               [(ngModel)]="gender">
+              <ion-radio-group mode="ios" name="gender" class="d-flex gap-1" [(ngModel)]="gender">
                 <ion-radio class="w-100" value="boy">Boy</ion-radio>
                 <ion-radio class="w-100" value="girl">Girl</ion-radio>
               </ion-radio-group>
@@ -93,12 +100,10 @@
               </div>
             </div>
             <div class="mt-5 ion-hide-sm-down">
-              <app-button [fullWidth]="true"
-                          [title]="'Continue to payment'"></app-button>
+              <app-button [fullWidth]="true" [title]="'Continue to payment'"></app-button>
             </div>
           </form>
         </div>
-
       </ion-col>
       <ion-col class="price p-15" size-xs="12" size-sm="5" size-md="4">
         <h5>Summary</h5>
@@ -109,8 +114,7 @@
             <span class="fs-12 gray-text">x 1</span>
           </div>
           <div>
-            <span class="d-block fs-16">SAR <span
-              class="fw-700">456</span></span>
+            <span class="d-block fs-16">SAR <span class="fw-700">456</span></span>
             <span class="fs-12 gray-text ion-float-end">Monthly</span>
           </div>
         </div>
@@ -126,14 +130,13 @@
           <span class="fw-700">Taxes</span>
           <span class="ion-float-end">SAR<span class="fw-700"> 4.0</span></span>
         </div>
-        <hr class="line mt-2">
+        <hr class="line mt-2" />
         <div class="fs-12 mt-2">
           <span class="fw-700">Total</span>
           <span class="ion-float-end">SAR<span class="fw-700"> 456</span></span>
         </div>
         <div class="mt-5 submit-btn ion-hide-sm-up">
-          <app-button [fullWidth]=true
-                      [title]="'Continue to payment'"></app-button>
+          <app-button [fullWidth]="true" [title]="'Continue to payment'"></app-button>
         </div>
       </ion-col>
     </ion-row>

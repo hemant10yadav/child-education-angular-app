@@ -13,7 +13,8 @@ ion-breadcrumb {
   font-size: 12px;
 }
 
-input, ion-radio {
+input,
+ion-radio {
   width: 100%;
   margin-top: 5px;
   display: block;
@@ -22,7 +23,6 @@ input, ion-radio {
   border-radius: 8px;
   padding: 10px;
 }
-
 
 .topic-tiles {
   display: flex;
@@ -42,7 +42,6 @@ input, ion-radio {
       cursor: pointer;
     }
   }
-
 }
 
 .p-15 {
@@ -56,7 +55,6 @@ input, ion-radio {
     border-radius: 0 0 24px 24px;
   }
 }
-
 
 .mysteryBox {
   display: flex;

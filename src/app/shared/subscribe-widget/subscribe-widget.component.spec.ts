@@ -9,8 +9,8 @@ describe('SubscribeWidgetComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubscribeWidgetComponent ],
-      imports: [IonicModule.forRoot()]
+      declarations: [SubscribeWidgetComponent],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(SubscribeWidgetComponent);

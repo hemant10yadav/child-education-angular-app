@@ -1,20 +1,37 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-row class="bg-app">
+    <ion-col
+      class="landing-page d-flex flex-column ion-justify-content-center ion-align-items-center ion-text-center"
+      [size]="12">
+      <ion-note color="light" class="heading">
+        <h1 class="fw-900 fs-50 title">Discover the magic of our
+                                       surprise box</h1>
+        <h5 class="fs-20 fw-700">Unleash your child's curiosity with our
+                                 educational
+                                 subscription
+                                 box filled with fun and learning.</h5>
+      </ion-note>
+      <span class="mt-2">
+        <app-button [title]="'Subscribe Now'"></app-button>
+      </span>
+      <div class="mt-5">
+        <img class="landing-page-logo" alt="landing page image"
+             src="assets/img/landingPage.png">
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12" class="subscribe">
+      <div
+        class="title d-flex flex-column ion-text-center ion-align-items-center">
+          <p>Discover</p>
+          <h1>How It Works: Subscribe and Receive Your Surprise Box</h1>
+          <h6>Subscribe to our surprise subscription box and give your child
+              the gift of learning. Each month, we curate a box filled with
+              educational materials tailored to your child's age and
+              interests.a</h6>
+      </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    </ion-col>
+  </ion-row>
 </ion-content>

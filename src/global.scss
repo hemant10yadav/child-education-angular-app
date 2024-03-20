@@ -24,3 +24,66 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,800;1,800&display=swap');
+
+$appColor: #AB95F9;
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100,
+  "YTLC" 500;
+}
+
+.fw-900{
+  font-weight: 900;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.bg-app{
+  background-color:$appColor;
+}
+
+.app-color {
+  color: $appColor;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mt-5{
+  margin-top: 2.5rem;
+}

@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {IonicModule} from "@ionic/angular";
+import {NavBarComponent} from "./shared/nav-bar/nav-bar.component";
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule, NavBarComponent]
 })
 export class AppComponent {
-  constructor() {}
+  constructor () {
+  }
 }

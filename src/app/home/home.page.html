@@ -12,26 +12,53 @@
                                  box filled with fun and learning.</h5>
       </ion-note>
       <span class="mt-2">
-        <app-button [title]="'Subscribe Now'"></app-button>
+        <app-button (clicked)="subscribe()"
+                    [title]="'Subscribe Now'"></app-button>
       </span>
       <div class="mt-5">
-        <img class="landing-page-logo" alt="landing page image"
+        <img  class="landing-page-logo" alt="landing page image"
              src="assets/img/landingPage.png">
       </div>
     </ion-col>
   </ion-row>
-  <ion-row>
-    <ion-col size="12" class="subscribe">
+  <ion-row class="subscribe">
+    <ion-col size="12">
       <div
         class="title d-flex flex-column ion-text-center ion-align-items-center">
-          <p>Discover</p>
-          <h1>How It Works: Subscribe and Receive Your Surprise Box</h1>
-          <h6>Subscribe to our surprise subscription box and give your child
-              the gift of learning. Each month, we curate a box filled with
-              educational materials tailored to your child's age and
-              interests.a</h6>
+        <p>Discover</p>
+        <h1>How It Works: Subscribe and Receive Your Surprise Box</h1>
+        <h6>Subscribe to our surprise subscription box and give your child
+            the gift of learning. Each month, we curate a box filled with
+            educational materials tailored to your child's age and
+            interests</h6>
       </div>
-
+    </ion-col>
+    <ion-col class="widget-container mt-4 ">
+      <app-subscribe-widget *ngFor="let sub of subscribeWidget; index as i"
+                            [count]="i+1"
+                            [title]="sub.title"
+                            [description]="sub.description"
+                            [logo]="sub.logo"
+      ></app-subscribe-widget>
+    </ion-col>
+    <ion-col class="d-flex ion-justify-content-center mt-5" size="12">
+      <app-button (clicked)="subscribe()"
+                  [title]="'Subscribe Now'"></app-button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="footer">
+    <ion-col class="body">
+      <div class="links">
+        <u>Privacy Policy</u>
+        <u>Terms of Service</u>
+        <u>Cookies Settings</u>
+      </div>
+      <div>
+        <Span>© 2023 MyEdu. All rights reserved.</Span>
+      </div>
     </ion-col>
   </ion-row>
 </ion-content>
+
+
+

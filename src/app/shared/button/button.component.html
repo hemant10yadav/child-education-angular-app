@@ -1,1 +1,3 @@
-<button class="app-color">{{ title }}</button>
+<button [ngClass]="fullWidth? 'w-100':''"
+        (click)="handleClick()">{{ title }}
+</button>

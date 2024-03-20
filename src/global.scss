@@ -24,18 +24,22 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 $appColor: #AB95F9;
 
 * {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-variation-settings: "wdth" 100,
   "YTLC" 500;
 }
 
-.fw-900{
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fw-900 {
   font-weight: 900;
 }
 
@@ -43,28 +47,39 @@ $appColor: #AB95F9;
   font-weight: 700;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
 
 .fs-50 {
   font-size: 50px;
+  @media only screen and (max-width: 575.98px) {
+    font-size: 40px;
+  }
 }
 
 .fs-20 {
   font-size: 20px;
 }
 
-.bg-app{
-  background-color:$appColor;
+.fs-32 {
+  font-size: 32px;
+}
+
+.bg-app {
+  background-color: $appColor;
 }
 
 .app-color {
   color: $appColor;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
 
@@ -84,6 +99,14 @@ $appColor: #AB95F9;
   margin-top: 2rem;
 }
 
-.mt-5{
+.mt-5 {
   margin-top: 2.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.w-100 {
+  width: 100%
 }

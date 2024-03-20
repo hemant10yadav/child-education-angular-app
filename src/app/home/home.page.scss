@@ -3,9 +3,10 @@
 }
 
 .heading {
-  width: 800px;
+  max-width: 800px;
 
   .title {
+    padding: 0 10px;
     text-shadow: 0 0 2px, 5px 0 5px rgb(137, 106, 249);
   }
 }
@@ -13,33 +14,66 @@
 
 .landing-page-logo {
   padding: 0 60px;
-  height: 700px;
+  @media only screen and (max-width: 575.98px) {
+    padding: 0 20px;
+  }
+  max-width: 100%;
+  height: auto;
   margin-top: 40px;
   margin-bottom: 80px;
 }
 
 .subscribe {
-  height: 800px;
   background-image: url('/assets/img/demo.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
+  padding-bottom: 140px;
 
   .title {
-    margin-top: 6rem;
+    margin-top: 4rem;
 
     h1 {
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 700;
-      max-width: 500px;
+      max-width: 800px;
     }
 
     h6 {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 400;
       line-height: 36px;
-      max-width: 600px;
+      max-width: 850px;
+    }
+  }
+
+}
+
+.widget-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.footer {
+  margin: 0 40px;
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
+
+  .body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 400;
+
+    .links u {
+      margin-right: 20px;
     }
   }
 }
+
